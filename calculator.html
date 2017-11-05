@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+    <title>nitts calculator</title>
+  <style>
+  div.attu{
+      background-color:silver;
+      width:500px;
+      height:500px;
+      border-style:dashed;
+      border-radius:3px;
+  }
+  div.nittin{
+      color:Dark grey;
+      font-family: "Courier New", Courier, monospace;
+      font-size:30px;
+      font-style:bold;
+      border-style:dashed;
+      border-radius:5px;
+      border-color:yellow;
+      background-color:cyan;
+      pading:5px;
+      margin:20px;
+  }
+  div.sharma{
+      color:tomato;
+  }
+  .button {
+    -webkit-border-radius: 24px;
+    border-radius: 15px;
+    border:5px solid grey;
+    background-color:beige;
+    font-size:24;
+    width:80px;
+    height:50px;
+    padding:0px;
+    color:black;
+}
+.buttonc {
+    -webkit-border-radius: 24px;
+    border-radius: 15px;
+    border:5px solid grey;
+    background-color:aquamarine;
+    font-size:24;
+    width:80px;
+    height:50px;
+    padding:0px;
+    color:Blue;
+}
+.buttone {
+    -webkit-border-radius: 24px;
+    border-radius: 15px;
+    border:5px solid grey;
+    background-color:lightgrey;
+    font-size:24;
+    width:80px;
+    height:50px;
+    padding:0px;
+    color:black;
+}
+
+.buttonop {
+    -webkit-border-radius: 24px;
+    border-radius: 15px;
+    border:5px solid grey;
+    background-color:burlywood;
+    font-size:24;
+    width:80px;
+    height:50px;
+    padding:0px;
+    color:white;
+}
+</style>
+</head>
+<body>
+<div class="attu">
+<fieldset><legend>nitts</legend>
+<div class="nittin"><marquee>Designed by Nitts</marquee></div>
+<div class="sharma">
+<h1 align="center">Calculator</h1></div>
+<br />
+<br />
+<form name=Calc>
+    <table>
+        <tr>
+        <p align="center">
+            <input type="text" name="Input" size="16" style="height:40px; width:320px; background-color:lightgrey; font-size:36px;">
+            </p>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    
+                <input type="button" name="1" value="1" OnClick="Calc.Input.value += '1'" class="button">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="2" value="2" OnClick="Calc.Input.value += '2'" class="button">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="3" value="3" OnClick="Calc.Input.value += '3'" class="button">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="+" value="+" OnClick="Calc.Input.value += ' + '" class="buttonop">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <input type="button" name="4" value="4" OnClick="Calc.Input.value += '4'" class="button">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="5" value="5" OnClick="Calc.Input.value += '5'" class="button">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="6" value="6" OnClick="Calc.Input.value += '6'" class="button">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="-" value="-" OnClick="Calc.Input.value += ' - '" class="buttonop">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <input type="button" name="7" value="7" OnClick="Calc.Input.value += '7'" class="button">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="8" value="8" OnClick="Calc.Input.value += '8'" class="button">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="9" value="9" OnClick="Calc.Input.value += '9'" class="button">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="*" value="*" OnClick="Calc.Input.value += ' * '" class="buttonop">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <input type="button" name="C" value="C" OnClick="Calc.Input.value = ''" class="buttonc">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="0" value="0" OnClick="Calc.Input.value += '0'" class="button">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="=" value="=" OnClick="Calc.Input.value = eval(Calc.Input.value)" class="buttone">
+                </div>
+            </td>
+            <td>
+                <div>
+                    <input type="button" name="/" value="/" OnClick="Calc.Input.value += ' / '" class="buttonop">
+                </div>
+            </td>
+        </tr>
+    </table>
+    </form>
+    </fieldset>
+    </div>
+</body>
+</html>
